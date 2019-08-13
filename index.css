@@ -1,0 +1,55 @@
+.container {
+    height: 75vh;
+    width: 100%;
+    position: relative;
+}
+
+.cardBack {
+        background-color: green;
+        position: absolute;
+        /* left: 20 + props.pos*30*props.id, */
+        /* transition: props.id/15 + "s linear", */
+        height: 300px;
+        width: 200px;
+        border: 1px solid black;
+        border-radius: 5%;
+        margin: 0;
+        padding: 0;
+        position: absolute;
+        /* background-image: "url(" + cardback + ")", */
+        background-size: 200px 300px;
+}
+
+.oneCard {
+    background-color: green;
+    position: absolute;
+    top: -50px;
+    /* left: 20 + props.pos*30*props.id, */
+    /* transition: props.id/15 + "s linear", */
+    height: 330px;
+    width: 220px;
+    border: 1px solid black;
+    border-radius: 5%;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    /* background-image: "url(" + cardback + ")", */
+    background-size: 220px 330px;
+}
+
+.draw:hover {
+    transform: translate( 0px, -50px);
+    height: 330px;
+    width: 220px;
+    background-size: 220px 330px;
+}
+
+.draw-card {
+    height: 225px;
+    width: 150px;
+    border: 1px solid black;
+    border-radius: 5%;
+    background-image: url(images/cardback.png);
+    background-size: 150px 225px;
+    position: absolute;
+}
